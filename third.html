@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>dyson_second</title>
+    <meta charset="utf-8" />
+    
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 992px;
+  font-family: "Helvetica";
+}
+
+/* 네비게이션바 */
+.navibar{
+  height:60px;/*네비게이션바의 세로폭*/
+  padding-left:30px;/*좌측간격*/
+  padding-right:30px;/*우측간격*/
+  background-color: black;
+
+}
+.navibar #logo{
+  line-height:60px;/*글자의 세로폭을 늘려주는 속성*/
+  
+}
+
+.navibar #logo img{
+  vertical-align: middle;/*부모요소의 중앙에 정렬*/
+  width: 98px;
+  height: 47px;
+}
+
+.navibar #menu{
+  float:right;/*오른쪽정렬*/
+  list-style:none;/*블릿삭제*/
+  padding:0;
+  margin:0;
+  margin-right:60px ;
+  
+}
+
+.navibar #menu li a:hover{
+        color: #7c7b7b;
+        border-bottom: 2px solid #b90cb0;
+
+    }
+.navibar #menu li{
+  float:left;/*li태그안에서 왼쪽정렬*/
+  margin-left:40px;/*글자끼리 간격30px*/
+  line-height:60px;
+}
+
+.navibar #menu li a {
+  color:#ffffff;
+  font-size:14px;
+  text-decoration:none;
+  font-weight:450;
+}
+
+#iron{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.box{
+  
+  width: 70%;
+  max-width: 900px;
+  margin: 50px auto;
+
+}
+.box .iron-name{
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.iron-name {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size:20px;
+    margin-top: 100px;
+}
+.product-summary{
+    height: 40px;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}
+
+.product-summary #sum{
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.divide{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #AAAAAA;
+    width: 650px;
+    margin-right: 210px;
+    margin-left: auto;
+   
+    
+
+}
+.price{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.buy{
+    background-color: #bfbfbf;
+    width: 140px;
+    height: 45px;
+    font-size: 18px;
+    
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    
+}
+
+.buy a{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 13px;
+    text-decoration: none;
+    color: #333;
+}
+.product-feature{
+    background-color: #e8e8e8;
+    ;
+    
+    
+}
+h1{
+    float: left;
+}
+
+h1 #topic{
+    display: block;
+    text-align: center;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    padding: 50px;
+   
+    
+}
+
+
+ h3{
+  font-size:24px;
+  color:#545454;
+  margin-top:60px;
+  margin-bottom:60px;
+  text-align:center;
+}
+
+.product-list{
+  width:735px;/*가로길이 (제품너비225+제품간격20)*3의 값*/
+  margin-left:auto;
+  margin-right:auto;margin-top: 30px;
+}
+
+.product {
+  text-align:center;
+  width:225px;
+  display:block;/*a태그의 위치를 제대로 잡아주기 위한 속성*/
+  color:#545454;
+  text-decoration:none;
+  float:left;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.product-name{
+  margin-top:20px;
+  margin-bottom:4px;
+}
+
+.clearfix{
+  clear:both;/*빈태그를 만들어 float를 해제*/
+}
+/* 하단바 */
+h2 .feature {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;margin-top: 50px;
+    margin-bottom: 50px;
+}
+.product-price{
+    margin-bottom: 30px;
+
+}
+
+.products{
+    background-color: #f0f0f0;
+}
+.feature{
+
+    margin-top: 20px;
+
+}
+.product1-name{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.product1-price{
+    display: block;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+<body>
+    <div class="navibar">
+        <a href="#" id="logo">
+          <img src ="https://i.postimg.cc/JtVWf1fq/99-AA813-E5-E9854570-E.jpg" height="30">
+        </a>
+        
+        <ul id="menu">
+              <li> <a href="#">제품</a></li>
+              <li><a href="#">제품 등록</a></li>
+              <li><a href="#">매장안내</a></li>
+              <li><a href="#">Dyson Live</a></li>
+              <li><a href="#">고객지원</a></li>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="product-summary"><p id="sum">다이슨 에어랩™ 스타일러 컴플리트 롱 ₩649,000</p></div>
+<div class="box"><div class="helper"></div>
+      <img id="iron" src="https://i.postimg.cc/XJMt3Nqr/img-1-removebg-preview.png" width=350>
+    <p class="iron-name">다이슨 에어랩™ 스타일러 컴플리트 롱</p>
+        <p class="iron-explain">
+        <ul id="explain">
+            <li>가슴 길이보다 긴 모발용.</li>
+            <li>과도한 열 손상 없는 헤어 스타일링.</li>
+            <li>8개의 툴 구성 포함.</li>
+            <li>컬과 웨이브를 위한 배럴, 부시시함 억제, 매끄러운 스타일링과 볼륨을 위한 브러시 포함.</li>
+        </ul></p></div>
+    </div>
+    <div class="divide"></div>
+    <div class="price">₩649,000</div>
+    <div class="buy"><a href="#">구매하기</a></div>
+
+    <div class="products">
+        <h2 class="feature">전체특징</h2>
+      <div class="product-list">
+        <a href="#" class="product">
+          <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/products/personal-care/671/variants/product-pdps/671-Magento-V6-Key-Controls-Airflow-Speed.jpg?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1920" width="225">
+          <div class="product1-name">바람속도</div>
+          <div class="product1-price">내 스타일링에 적합한 세 가지 정확한 바람속도</div>
+        </a>
+      
+      <a href="#" class="product">
+          <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/products/personal-care/671/variants/product-pdps/671-Magento-V6-Key-Controls-Heat-Control.jpg?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1920" width="225">
+          <div class="product1-name">온도 제어</div>
+          <div class="product1-price">연속 콜드 샷을 포함한 4가지 정밀 온도 설정.</div>
+        </a>
+      
+      <a href="#" class="product">
+          <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/products/personal-care/671/variants/product-pdps/671-Magento-V6-Key-Controls-Cold-Shot.jpg?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1920" width="225">
+          <div class="product1-name">콜드 샷</div>
+          <div class="product1-price">스타일을 고정하기 위해 즉시 발열체를 끄고 찬 바람을 분사합니다.</div>
+        </a>
+      
+      <a href="#" class="product">
+          <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/products/personal-care/671/variants/product-pdps/671-Product-PDP-Magento-Tech-Feature-1.jpg?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1920" width="225">
+          <div class="product1-name">코안다 효과로 컬</div>
+          <div class="product1-price">다이슨 배럴은 코안다 효과라는 공기역학 현상을 이용해 모발을 유인, 감싸줍니다. 과도한 열 손상 없이, 바람으로 스타일링 합니다</div>
+        </a>
+      
+      <a href="#" class="product">
+          <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/mexico/hair-care/dyson-airwrap/variant/product-varients/shared-assetts/mexico-only-airwrap-features-smooth-brush-coanda.jpg?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1920" width="225">
+          <div class="product1-name">S코안다 효과로 매끄러운 스타일링</div>
+          <div class="product1-price">다이슨 브러시는 코안다 효과로 모발을 브러시 표면으로 끌어들이고 모발 방향으로 바람을 불어 매끄러운 스타일링을 완성해 줍니다.¹</div>
+        </a>
+      
+      <a href="#" class="product">
+          <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/products/personal-care/671/overview/671-Overview-Tech-Feature-2.jpg?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1920" width="225">
+          <div class="product1-name">다이슨 디지털 모터 V9으로 작동</div>
+          <div class="product1-price">최고 110,000rpm으로 회전하는 13 블레이드 임펠러가 최대 3.2kPa의 압력을 생성합니다. 코안다 효과를 발생시키는데 충분한 공기압을 만들어 냅니다</div>
+        </a>
+      
+      
+      
+      
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+      
+
+  
+
+
+
+
+    <div class="footer">
+        <div class="footer-img"><img src="https://i.postimg.cc/G2BZLYX0/footer-final.png" width=100%></div>
+    </div>
+</body>
+</html>
+
+
